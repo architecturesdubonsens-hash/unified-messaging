@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-size-base: 18px;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-size: var(--font-size-base);
+  background: #F8FAFC;
+  color: #1E293B;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Large touch targets for accessibility */
+button, a[role="button"] {
+  min-height: 48px;
+}
+
+/* Prevent text from being too small on mobile */
+input, textarea, select {
+  font-size: 18px !important;
+}
